@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;500&family=Fraunces:ital,opsz,wght@0,9..144,700;1,9..144,700&family=Inter:wght@400;700;800&family=Kumbh+Sans:wght@400;700&family=Lexend+Deca&family=Montserrat:wght@500;700&family=Outfit:wght@300;400;600&family=Overpass:wght@400;700&family=Poppins:wght@300;400;600;700&family=Raleway:wght@400;700&family=Red+Hat+Display:wght@500;700;900&family=Space+Mono:ital,wght@1,700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class="logo"><img src="./images/logo.svg" alt=""></div>
+
+  <div class="tip-calculator">
+      <div class="partOne">
+        <label for="">Bill</label>
+        <input type="number" class="input bill-input" id="bill-input">
+        <label for="">Select Tip %</label>
+        <div class="tip">
+          <div class="tips tip-5">5%</div>
+          <div class="tips tip-10">10%</div>
+          <div class="tips tip-15 active-tip">15%</div>
+          <div class="tips tip-25">25%</div>
+          <div class="tips tip-50">50%</div>
+          <div class="" id="tip-custom"><input type="number" class="tip-custom" placeholder=CUSTOM></div>
+        </div>
+        <div class="peopleLabel">
+          <label for="">Number Of People</label>
+          <label for="" class="error">Cant't be zero</label>
+        </div>
+        <input type="number" class="input people-input">
+      </div>
+
+      <div class="result">
+          <div class="tip-amount">
+            <div class="text">
+              <p>Tip Amount</p>
+              <p class="person">/ person</p>
+            </div>
+            <div class="amount" id="tip-amount">$4.27</div>
+          </div>
+            <div class="total">
+              <div class="text">
+                <p>total</p>
+                <p class="person">/ person</p>
+              </div>
+              <div class="amount" id="total-amount">$32.79</div>
+          </div>
+          <div class="reset">reset</div>
+
+
+
+      </div>
+      
+  </div>
+  
+  
+  
+
+  <script src="./js/main.js"></script>
+</body>
+</html>
